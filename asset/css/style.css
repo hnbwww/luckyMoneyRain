@@ -1,0 +1,157 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html, body {
+    width: 100vw;
+    height: 100vh;
+    background: url("../img/bg.png") no-repeat center/cover;
+    overflow: hidden;
+}
+
+/* progress */
+.progressCon {
+    width: 244px;
+    height: 84px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+
+.progressText {
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    color: rgb(252, 199, 52);
+}
+
+.progress {
+    width: 244px;
+    height: 14px;
+    background: url("../img/progressBg.png") repeat-x;
+    background-size: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -122px;
+    margin-top: -7px;
+    font-size: 0;
+}
+
+span.progressWid {
+    display: inline-block;
+    width: 10%;
+    height: 14px;
+    background: deepskyblue;
+    border-radius: 30px;
+    transition: width 5s;
+    background: url("../img/progressColor.png") repeat-x;
+}
+/*progress end*/
+/*header start*/
+.header{
+    display:flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items:center;
+    width:100%;
+    position:absolute;
+    top:14px;
+    z-index:99;
+    font-size:18px;
+    color:#faee00;
+}
+.icon {
+    width: 30px;
+    height: 30px;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+}
+/*box start*/
+#container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+/* 红包的样式*/
+.luckyMoney {
+    position: absolute;
+    display: block;
+    width: 54px;
+    height: 77px;
+    background: url('../img/catImg.png') no-repeat 0 0/cover;
+}
+/*点击后的红包*/
+.luckyMoneyOpen {
+    background-position:0 -77px;
+}
+
+/* 空的红包 */
+.luckyMoneyNone {
+    display: none;
+}
+/*box end*/
+
+/*pop start*/
+/* pop */
+#mask {
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 101;
+    display: none;
+}
+.pop {
+    width: 240px;
+    height: 371px;
+    background: url('../img/popBg.png') no-repeat;
+    background-size: cover;
+    position: absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    margin:auto;
+    color: #fff;
+    z-index: 102;
+    text-align: center;
+    font-size:16px;
+}
+.pop .title{
+    width:70px;
+    font-size:18px;
+    margin:80px auto 0;
+}
+.pop .popCon{
+    width:120px;
+    margin:0 auto;
+    font-size:14px;
+}
+.pop .popCon .totalCoin{
+    font-size:24px;
+}
+.shareBtn {
+    width: 187px;
+    height: 64px;
+    line-height:60px;
+    background: url('../img/shareBtn.png') no-repeat center/cover;
+    margin:100px auto 0;
+    color: rgb(167, 92, 26);
+    padding-left: 20px;
+}
+.closeBtn {
+    width: 32px;
+    height: 32px;
+    background: transparent;
+    margin: 20px auto 0;
+    border-radius: 50%;
+}

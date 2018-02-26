@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0 ,maximum-scale=1.0, user-scalable=no">
+    <title>luckyMoneyRain</title>
+    <link rel="stylesheet" href="asset/css/style.css">
+    <script src="//at.alicdn.com/t/font_569555_tdua72l8fvszto6r.js"></script>
+</head>
+<body>
+<!--progress start-->
+<div class="progressCon">
+    <div class="progressText">Loading</div>
+    <div class="progress">
+        <span class="progressWid"></span>
+    </div>
+</div>
+<!--progress end-->
+<!--header start-->
+<div class="header">
+    <div class="leftBar">
+        <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-loudou"></use>
+        </svg>
+        <span class="timer">0</span>
+    </div>
+    <div class="middleBar">
+        <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon--jinbi"></use>
+        </svg>
+        <span class="totalMoney">0</span>
+    </div>
+    <div class="rightBar">
+        <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-hongbao-"></use>
+        </svg>
+        <span class="luckyMoneyCount">0</span>
+    </div>
+</div>
+<!--header end-->
+<script>
+    //    progress
+    setTimeout(function () {
+        document.querySelector(".progressWid").style.width = "100%";
+    }, 1000);
+</script>
+<!--main start-->
+<div id="container">
+    <!--<span class="luckyMoney luckyMoneyOpen"></span>-->
+</div>
+<div id="mask">
+    <div class="pop">
+        <h3 class="title">总金额</h3>
+        <p class="popCon"><span class="totalCoin">7</span><span class="money">元</span></p>
+        <p class="popCon">您抢到<span class="totalluckyMoney">1</span>个红包</p>
+        <div class="shareBtn">分享翻倍</div>
+        <div class="closeBtn"></div>
+    </div>
+</div>
+<!--main end-->
+<script src="./asset/js/luckyMoney.js"></script>
+<script src="./asset/js/app.js"></script>
+</body>
+</html>
