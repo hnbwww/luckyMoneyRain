@@ -38,10 +38,10 @@ luckyMoney.prototype.create = function (id, amount) {
             return false;
         }
     };
-    document.addEventListener("click", function (e) {//为什么不把事件绑在自身？事件绑定在aLuckyMoney会出现卡顿情况
+    document.addEventListener("touchstart", function (e) {
         e.preventDefault();
         if (e.target.className === "luckyMoney") {
-            handler(e);//使用该事件则去处理一些事件      //为什么不把处理方法直接写入以及先判断红包是否为空？
+            handler(e);//使用该事件则去处理一些事件
         } else if (e.target.getAttribute("data-amount") == 0) {
             e.target.className = "luckyMoneyNone";
         } else {//文档其他内容被点击时
